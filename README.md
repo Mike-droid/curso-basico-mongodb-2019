@@ -56,3 +56,36 @@ En MongoDB Atlas, solamente debemos hacer `mongodb+srv://'nombreUsuario':<passwo
         { item: "canvas", qty: 100, tags: ["cotton"], size: { h: 28, w: 35.5, uom: "cm" } }
 )`
 - `db.'nombreColeccion'.findOne()` -> Muestra un documento de la colección.
+
+### MongoDB + Drivers
+
+Los drivers son las librerías que usamos para comunicar nuestra aplicación con nuestra base de datos.
+
+Existen algunos drivers oficiales:
+
+- C
+- C++
+- C#
+- Go
+- Java
+- Node.js
+- Perl
+- PHP
+- Python
+- Motor (Python Async)
+- Ruby
+- Mongoid (Ruby ODM)
+- Scala
+
+Para agregar los drivers al proyecto usamos un gestor de dependencias. Con Java usamos Maven.
+
+Con Python usamos Pip, por ejemplo: `python -m pip install pymongo`
+
+Con NodeJS usamos NPM, por ejemplo: `npm install mongodb --save`
+
+#### Inicio rápido transversal a la mayoría de los lenguajes (POO)
+
+1. Crear conexión MongoClient
+2. Obtener la base de datos MongoDatabase
+3. Acceder a una colección MongoCollection
+4. CRUD
