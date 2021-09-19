@@ -40,3 +40,19 @@ Es importante crear un usuario con el rol "Atlas Admin" que básicamente tiene t
 Debemos descargar [MongoDB Community Server](https://www.mongodb.com/try/download/community) y ejecutar el instalador.
 
 ### Instalación de MongoDB en Mac/Linux
+
+### Mongo Shell, configuración de clientes
+
+Si usamos windows, es importante añadir mongo.exe al PATH.
+
+Nos conectamos con nustro servidor haciendo `mongo 'urlDelServidor' --user 'nombre-usuario'` y luego escribimos la contraseña. Si todo está bien, deberemos tener un `0:PRIMARY>`.
+
+En MongoDB Atlas, solamente debemos hacer `mongodb+srv://'nombreUsuario':<password>@'urlDelServidor'/`
+
+- `show dbs` -> Lista de bases de datos.
+- `use 'nombreBD'` -> Creamos una base de datos (o la usamos si ya existe).
+- `db` -> Muestra en cuál base de datos estamos.
+- Rápidamente podemos insertar documentos, por ejemplo: `db.inventory.insertOne(
+        { item: "canvas", qty: 100, tags: ["cotton"], size: { h: 28, w: 35.5, uom: "cm" } }
+)`
+- `db.'nombreColeccion'.findOne()` -> Muestra un documento de la colección.
