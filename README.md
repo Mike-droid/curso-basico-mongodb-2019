@@ -89,3 +89,20 @@ Con NodeJS usamos NPM, por ejemplo: `npm install mongodb --save`
 2. Obtener la base de datos MongoDatabase
 3. Acceder a una colección MongoCollection
 4. CRUD
+
+## Operaciones CRUD
+
+### Bases de datos, Colecciones y Documentos en MongoDB
+
+- Bases de datos
+  - Contenedor físico de colecciones
+  - Cada base de datos tiene su archivo propio en el sistema de archivos
+  - Un clúster puede tener múltiples bases de datos
+- Colecciones
+  - Agrupación de documentos
+  - Equivalente a una tabla en las bases de datos relaciones
+  - No impone un esquema (las colecciones no deben tener la misma estructura necesariamente)
+- Documentos
+  - Un registro dentro de una colección
+  - Es análogo a un JSON (pero es un BSON)
+  - La unidad básica de MongoDB
