@@ -35,6 +35,8 @@ Es importante seleccionar un Cluster compartido y con la ubicación geográfica 
 
 Es importante crear un usuario con el rol "Atlas Admin" que básicamente tiene todos los privilegios. También es **muy importante** agregar nuestra dirección IP a las listas de direcciones IP que pueden acceder a este servidor.
 
-### Instalación MongoDB en Windows
+### Instalación de MongoDB en Windows
 
 Debemos descargar [MongoDB Community Server](https://www.mongodb.com/try/download/community) y ejecutar el instalador.
+
+### Instalación de MongoDB en Mac/Linux
