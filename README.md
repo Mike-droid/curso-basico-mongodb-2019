@@ -34,3 +34,7 @@ Creamos nuestra cuenta en [MongoDB](https://mongodb.com)
 Es importante seleccionar un Cluster compartido y con la ubicación geográfica más cercana a nuestra dirección, para que sea gratis y rápido. En este caso usaremos un clúster de AWS.
 
 Es importante crear un usuario con el rol "Atlas Admin" que básicamente tiene todos los privilegios. También es **muy importante** agregar nuestra dirección IP a las listas de direcciones IP que pueden acceder a este servidor.
+
+### Instalación MongoDB en Windows
+
+Debemos descargar [MongoDB Community Server](https://www.mongodb.com/try/download/community) y ejecutar el instalador.
