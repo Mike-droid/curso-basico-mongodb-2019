@@ -26,3 +26,11 @@ MongoDB nos permite guardar estructuras tipo JSON (realmente es BSON). MongoDB e
 MongoDB es schema less. Podemos guardar documentos con diferentes estructuras. Con JavaScript podemos hacer uso de MongoDB.
 
 ¡MongoDB es gratis y de código abierto! 😀
+
+### MongoDB Atlas
+
+Creamos nuestra cuenta en [MongoDB](https://mongodb.com)
+
+Es importante seleccionar un Cluster compartido y con la ubicación geográfica más cercana a nuestra dirección, para que sea gratis y rápido. En este caso usaremos un clúster de AWS.
+
+Es importante crear un usuario con el rol "Atlas Admin" que básicamente tiene todos los privilegios. También es **muy importante** agregar nuestra dirección IP a las listas de direcciones IP que pueden acceder a este servidor.
