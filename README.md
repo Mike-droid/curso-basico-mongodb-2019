@@ -8,6 +8,8 @@
 
 [10 MongoDB tutorials for beginners](https://medium.com/quick-code/top-tutorials-to-learn-mongo-db-f1e52bee7445)
 
+[Documentación oficial de MongoDB](https://docs.mongodb.com/manual/introduction/)
+
 ### Bases de datos NoSQL
 
 En NoSQL tenemos 4 grandes familias:
@@ -118,3 +120,21 @@ MongoDB no crea bases de datos vacías. "_id" es un campo obligatorio.
 ### Operaciones CRUD desde Compass
 
 Es más fácil.
+
+## Esquemas y relaciones
+
+### Tipos de datos
+
+Nuestros documentos no pueden exceder el tamaño de 16MB.
+
+- Strings -> "Texto"
+- Boolean -> true/false
+- ObjectId -> Son identificadores únicos en BSON
+- Date -> ISODate('AAAA-MM-DDTHH:MM:SS.SSSZ')
+- Number:
+  - Double
+  - Integer 32 bits
+  - Integer 64 bits
+  - Decimal -> Más enfocado a información financiera
+- Documentos embebidos -> Es como un JSON dentro de otro (y así tantos como quieras)
+- Arrays
