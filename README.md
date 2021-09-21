@@ -106,3 +106,15 @@ Con NodeJS usamos NPM, por ejemplo: `npm install mongodb --save`
   - Un registro dentro de una colección
   - Es análogo a un JSON (pero es un BSON)
   - La unidad básica de MongoDB
+
+### Operaciones CRUD desde la consola de MongoDB
+
+MongoDB no crea bases de datos vacías. "_id" es un campo obligatorio.
+
+[Apuntes extra del curso](https://static.platzi.com/media/public/uploads/crud_0540220d-88e9-447c-9e03-681375363137.txt)
+
+**Mucho cuidado con esta instrucción:** `db.nombreColeccion.deleteMany({})` porque borrará TODA la base de datos.
+
+### Operaciones CRUD desde Compass
+
+Es más fácil.
