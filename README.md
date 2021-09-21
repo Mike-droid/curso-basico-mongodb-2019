@@ -138,3 +138,24 @@ Nuestros documentos no pueden exceder el tamaño de 16MB.
   - Decimal -> Más enfocado a información financiera
 - Documentos embebidos -> Es como un JSON dentro de otro (y así tantos como quieras)
 - Arrays
+
+### ¿Qué son los esquemas y las relaciones?
+
+Los esquemas son las formas en que nosotros organizamos nuestros documentos dentro de nuestras colecciones.
+
+MongoDB no impone ningún esquema.
+
+```JSON
+{
+  "_id": ObjectId(<ObjectId>),
+  "userName": "Miguel",
+  "age": 23
+},
+{
+  "_id": ObjectId(<ObjectId>),
+  "name": "José
+  "city": "Los Ángeles"
+}
+```
+
+Las relaciones son las formas en que las entidades/documentos se encuentran enlazados unos con otros.
