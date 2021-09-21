@@ -159,3 +159,58 @@ MongoDB no impone ningún esquema.
 ```
 
 Las relaciones son las formas en que las entidades/documentos se encuentran enlazados unos con otros.
+
+### Relaciones entre documentos
+
+```JSON
+{
+  _id: "joe",
+  name: "Joe Bookreader"
+},
+{
+  patron_id: "joe",
+  street: "123 Fake Street",
+  city: "Faketon",
+  state: "MA",zip: 12345
+}
+```
+
+Esto de arriba es muy SQL. Mejor hacemos uso de documentos embebidos:
+
+```JSON
+{
+  _id: "joe",
+  name: "Joe Bookreader",
+  address: {
+    street: "123 Fake Street",
+    city: "Faketon",
+    state: "MA",
+    zip: 12345
+  }
+}
+```
+
+Relaciones uno a muchos usando documentos embebidos:
+
+```JSON
+{
+  _id: "joe",
+  name: "Joe Bookreader",
+  address: [
+    {
+      street: "123 Fake Street",
+      city: "Faketon",
+      state: "MA",
+      zip: 12345
+    },
+    {
+      street: "456 Fake Street",
+      city: "Boston",
+      state: "MA",
+      zip: 12345
+    }
+  ]
+}
+```
+
+**Importante:** La operación `update` en MongoDB **NO** es transaccional.
