@@ -214,3 +214,87 @@ Relaciones uno a muchos usando documentos embebidos:
 ```
 
 **Importante:** La operación `update` en MongoDB **NO** es transaccional.
+
+## Profundización de queries dentro de MongoDB
+
+### Operadores para realizar queries y proyecciones
+
+Filtros:
+
+```javascript
+db.inventory.find({ status: { $in: [ "A", "D" ] } })
+```
+
+Proyecciones:
+
+`db.inventory.findOne({status: "A"})`
+
+```JSON
+{
+  "_id": ObjectId("23d23d23fr23f23f"),
+  "item": "journal",
+  "status": "A",
+  "size": {
+    "h": 14,
+    "w": 21,
+    "uom": "cm"
+  },
+  "inStock": [
+    {
+      "warehouse": "A",
+      "qty": 5
+    }
+  ]
+}
+```
+
+Podemos ser más específicos:
+
+`db.inventory.findOne({status: "A"}, {item: 1, status: 1})`
+
+Ese 1 es valor booleano, así que le decimos que queremos solo los campos `item` y `status`.
+
+```JSON
+{
+  "_id": ObjectId("23d23d23fr23f23f"),
+  "item": "journal",
+  "status": "A"
+}
+```
+
+Operadores de comparación:
+
+| Nombre | Descripción       |
+| ------ | ----------------- |
+| $eq    | Igual a           |
+| $ne    | Distinto a        |
+| $gt    | Mayor que         |
+| $gte   | Mayor o igual que |
+| $lt    | Menor que         |
+| $lte   | Menor o igual que |
+| $in    | En un conjunto    |
+| $nin   | No en un conjunto |
+
+Operadores lógicos:
+
+| Nombre | Descripción |
+| ------ | ----------- |
+| $and   | Y           |
+| $or    | O           |
+| $not   | No          |
+| $nor   | No o        |
+
+Operadores por elemento:
+
+| Nombre  | Descripción                                           |
+| ------- | ----------------------------------------------------- |
+| $exists | Documentos que cuentan con un campo específico        |
+| $type   | Documentos que cuentan un campo de un tipo específico |
+
+Operadores para arreglos:
+
+| Nombre     | Descripción                                                                |
+| ---------- | -------------------------------------------------------------------------- |
+| $all       | Arreglos que contengan todos los elementos de la query                     |
+| $elemMatch | Documentos que cumplen la condición del $elemMatch en uno de sus elementos |
+| $size      | Documentos que contienen un campo tipo arreglo de un tamaño específico     |
