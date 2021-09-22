@@ -298,3 +298,9 @@ Operadores para arreglos:
 | $all       | Arreglos que contengan todos los elementos de la query                     |
 | $elemMatch | Documentos que cumplen la condición del $elemMatch en uno de sus elementos |
 | $size      | Documentos que contienen un campo tipo arreglo de un tamaño específico     |
+
+### Usando operadores para realizar Updates en arreglos
+
+[Documentación sobre operadores de MongoDB](https://docs.mongodb.com/manual/reference/operator/)
+
+[Artículo en Platzi](https://platzi.com/clases/1533-mongodb/18555-usando-operadores-para-realizar-updates-en-arreglo/)
