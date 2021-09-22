@@ -304,3 +304,11 @@ Operadores para arreglos:
 [Documentación sobre operadores de MongoDB](https://docs.mongodb.com/manual/reference/operator/)
 
 [Artículo en Platzi](https://platzi.com/clases/1533-mongodb/18555-usando-operadores-para-realizar-updates-en-arreglo/)
+
+### Operaciones avanzadas con Agregaciones
+
+Las agregacions son operaciones más avanzadas.
+
+[Documentación sobre operadores de MongoDB](https://docs.mongodb.com/manual/reference/operator/)
+
+[Tutorial MongoDB 4.2 Parte 10 Agregaciones : Instrucción Aggregate $match $group $sum $avg $multip](https://www.youtube.com/watch?v=OV2byyfKHlw&list=PLpk46uAL3qUG3NYfYJkmREZGCX5yM3P7u&index=11)
