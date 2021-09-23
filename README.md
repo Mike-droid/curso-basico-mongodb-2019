@@ -312,3 +312,59 @@ Las agregacions son operaciones más avanzadas.
 [Documentación sobre operadores de MongoDB](https://docs.mongodb.com/manual/reference/operator/)
 
 [Tutorial MongoDB 4.2 Parte 10 Agregaciones : Instrucción Aggregate $match $group $sum $avg $multip](https://www.youtube.com/watch?v=OV2byyfKHlw&list=PLpk46uAL3qUG3NYfYJkmREZGCX5yM3P7u&index=11)
+
+## Python con MongoDB
+
+### Configuración e instalación de dependencias para el proyecto PlatziMongo
+
+[Artículo en Platzi](https://platzi.com/clases/1533-mongodb/18554-configuracion-e-instalacion-de-dependencias-para-e/)
+
+### Operaciones CRUD con Python y Pymongo
+
+El proyecto ya cuenta con el código de Python para hacer un CRUD y ponerlo a prueba con Postman (aunque yo usé ThunderClient de VS Code).
+
+### Diseñando el esquema de clases, cursos y carreras
+
+Creamos carreras.json:
+
+```JSON
+{
+  "_id": "614bf442809a5509c0203abb",
+  "nombre": "Carrera de AWS",
+  "descripcion": "En esta carrera aprenderas AWS",
+  "cursos": [
+    {
+      "_id": "",
+      "nombre": "Nombre del curso"
+    },
+    {
+      "_id": "",
+      "nombre": "Nombre del curso"
+    }
+  ]
+}
+```
+
+cursos.json:
+
+```JSON
+{
+  "_id": "",
+  "nombre": "",
+  "descripcion": "",
+  "clases": [
+    {
+      "_id": "",
+      "orden": 1,
+      "nombre": "",
+      "video": ["url1"]
+    },
+    {
+      "_id": "",
+      "orden": 1,
+      "nombre": "",
+      "video": ["url1"]
+    }
+  ]
+}
+```
