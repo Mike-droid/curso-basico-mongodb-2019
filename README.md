@@ -414,3 +414,8 @@ Habilita la opción de storage encriptado.
 - [Performance Best Practices for MongoDB](https://www.mongodb.com/collateral/mongodb-performance-best-practices)
 - [What is MongoDB Sharding and the Best Practices](https://geekflare.com/mongodb-sharding-best-practices/)
 
+## Fin del curso
+
+### Resumen y conclusiones
+
+[MongoDB Workbook](http://nicholasjohnson.com/mongo/course/workbook/)
