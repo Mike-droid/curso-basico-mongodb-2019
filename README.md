@@ -368,3 +368,49 @@ cursos.json:
   ]
 }
 ```
+
+### Ejecución de queries
+
+### Relaciones
+
+### Consultas más rápidas con Índices
+
+En MongoDB los índices ayudan a que las consultas sean más rápidas. Sin índices, MongoDB debe hacer un escaneo de toda la colección.
+
+Existen varios tipos de índices:
+
+- De un solo campo
+- Compuestos
+- Multillave
+- Geoespaciales
+- De texto
+- Hashed
+
+## Recomendaciones para poner en producción tu cluster de Atlas
+
+### Recomendaciones de Arquitectura y Paso a Producción
+
+Usa un Backend basadoe en la nube como AWS, GCP o Azure.
+
+Usa MongoDB Atlas como servicio.
+
+Guarda las credenciales en variables de entorno o archivos de configuración fuera del proyecto.
+
+Asegura que tu clúster se encuetre en la misma región del proveedor que tu aplicación.
+
+Has [VPC peering](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) entre la VPC de tu aplicación y la VPC de tu clúster.
+
+Cuida tu lista de IP's blancas.
+
+Habilitar autenticación de dos pasos.
+
+Actualiza constantemente tu versión de MongoDB.
+
+Ten separados tus ambientes de dev/test/prod.
+
+Habilita la opción de storage encriptado.
+
+- [14 Things I Wish I'd Known When Starting with MongoDB](https://www.infoq.com/articles/Starting-With-MongoDB)
+- [Performance Best Practices for MongoDB](https://www.mongodb.com/collateral/mongodb-performance-best-practices)
+- [What is MongoDB Sharding and the Best Practices](https://geekflare.com/mongodb-sharding-best-practices/)
+
